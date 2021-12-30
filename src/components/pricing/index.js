@@ -35,6 +35,7 @@ const Pricing = () => {
                 color: "#ffffff",
               }}
               link={priceState.linkto[index]}
+              ticketIcon={true}
             />
           </div>
         </div>

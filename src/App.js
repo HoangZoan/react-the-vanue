@@ -7,31 +7,32 @@ import VenueNfo from "./components/venueInfo";
 import Highlights from "./components/highlights";
 import Pricing from "./components/pricing";
 import Location from "./components/location";
+import { Element } from "react-scroll/modules";
 
 function App() {
   return (
     <Fragment>
       <Header />
 
-      <Fragment>
+      <Element name="featured">
         <Featured />
-      </Fragment>
+      </Element>
 
-      <Fragment>
+      <Element name="venueinfo">
         <VenueNfo />
-      </Fragment>
+      </Element>
 
-      <Fragment>
+      <Element name="highlights">
         <Highlights />
-      </Fragment>
+      </Element>
 
-      <Fragment>
+      <Element name="pricing">
         <Pricing />
-      </Fragment>
+      </Element>
 
-      <Fragment>
+      <Element name="location">
         <Location />
-      </Fragment>
+      </Element>
 
       <Footer />
     </Fragment>
